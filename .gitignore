@@ -1,6 +1,4 @@
 .DS_Store
 .python/
-data/
-lib/
 __pycache__/
 *.pyc
