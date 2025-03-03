@@ -6,3 +6,4 @@ scikit-learn
 transformers
 protobuf
 fugashi
+unidic_lite
