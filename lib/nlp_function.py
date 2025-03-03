@@ -7,7 +7,7 @@ MODEL_NAME = "cl-tohoku/bert-base-japanese-whole-word-masking"
 max_length = 128  # メモリ削減のため短縮
 
 # トークナイザとモデルのロード（軽量辞書 unidic-lite を指定）
-tokenizer = BertJapaneseTokenizer.from_pretrained(MODEL_NAME, mecab_kwargs={"mecab_dic": "unidic-lite"})
+tokenizer = BertJapaneseTokenizer.from_pretrained(MODEL_NAME)
 
 # モデルのロード（半精度演算を有効化）
 device = "cuda" if torch.cuda.is_available() else "cpu"
